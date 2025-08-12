@@ -192,7 +192,7 @@ const handleUserScroll = useCallback((e) => {
     <div id="activities" className="flex w-full flex-col items-center py-10">
       <div
      
-        className="mb-6 button_join"
+        className="mb-6 content"
       >
        Activities
       </div>

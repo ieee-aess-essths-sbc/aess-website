@@ -14,7 +14,7 @@ export default function Questions() {
 	return (
 	 <section id="faq" className="flex flex-col items-center justify-center w-full">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="button_join mb-10 w-full">FAQ</h2>
+      <div className="w-full flex justify-center"><h2 className="content mb-10">FAQ</h2></div>  
         <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto lg:px-6 sm:px-2">
           {question.map((value, index) => (
             <div

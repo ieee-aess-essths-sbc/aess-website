@@ -58,7 +58,7 @@ export default function Navigation() {
 										Activities
 									</a>
 										<a
-										href="#drone"
+									
 										className="sm:text-sm md:text max-sm:text-sm/6 "
 										
 									>
@@ -76,7 +76,7 @@ export default function Navigation() {
 				
 				<div className="flex gap-2 ">	
 					<div className="lg:block md:block sm:hidden max-sm:hidden max-md:hiddden ">
-						<div className=" nav boxnav flex flex-row justify-between  rounded-3xl border border-gray-100 p-4 dark:border-gray-700 md:mt-0 md:flex-row md:border-0 md:text-sm md:font-medium gap-5 ">Contact Us</div>
+						<a href="https://www.facebook.com/profile.php?id=61552210194532" className=" nav boxnav flex flex-row justify-between  rounded-3xl border border-gray-100 p-4 dark:border-gray-700 md:mt-0 md:flex-row md:border-0 md:text-sm md:font-medium gap-5 cursor-pointer" target="_blank">Contact Us</a>
 					</div>
 					</div>
 					<div className="max-lg:hidden max-md:hidden md:hidden max-sm:block sm:block rounded-2xl w-full">	

@@ -67,7 +67,7 @@ body::before {
 }
 
 
-.button_join {
+.content {
 width:12rem;
 height: 60px;
     background-image: url("../../public/button.svg");	
@@ -82,12 +82,12 @@ height: 60px;
   text-align: center;
   padding: 5px;
   box-sizing: border-box;
-  cursor: pointer;
+
   align-items: center;
   align-content: center;
 }
 
-.button_join::before {
+.content::before {
   border-radius: 5rem;
   content: '';
   background-image: radial-gradient(circle at 100%, #4690D4 0%, #6EBFF4 22% ,#A5EFFF 100%) ;

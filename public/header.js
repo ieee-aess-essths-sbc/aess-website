@@ -17,7 +17,7 @@ export default function Header() {
 			</span>
 			<div className="sm:flex-col-reverse max-sm:flex-col-reverse flex justify-between ">
 
-			<div className="w-full flex lg:justify-start max-sm:justify-center sm:justify-center"> <div className="button_join">JOIN US</div></div>
+			<a href="https://www.facebook.com/profile.php?id=61552210194532" className="w-full flex lg:justify-start max-sm:justify-center sm:justify-center"> <div className="button_join">JOIN US</div></a>
 				<div className="mb-4 lg:text-left text-xl lgleading-20   lg:mb-7 sm:text-center max-sm:text-center  lg:text-md  sm:leading-none">
 			“Innovating Aerospace and Electronic Systems, Shaping the Future.”
 			</div>
@@ -32,7 +32,7 @@ export default function Header() {
 	<div className=" flex  gap-2 lg:flex-row lg:justify-start md:justify-center sm:flex-col max-md:flex-col max-md:justify-center max-sm:justify-center  sm:justify-center ">
 
 	  <HoverIcon
-        href="https://github.com/"
+        href="https://github.com/ieee-aess-essths-sbc"
         src="GitHub_colored.svg"
         hoverSrc="GitHub_hover.svg"
         alt="GitHub"

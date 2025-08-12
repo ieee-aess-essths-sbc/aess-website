@@ -6,7 +6,7 @@ export default function Values() {
 	return (
     <section id="value">
 	  <div  className="lg:px-14 max-sm:p-0 sm:p-0 flex flex-col items-center content-center gap-10 ">
-    <div><h2 className="button_join ">Values</h2></div>
+    <div><h2 className="content ">Values</h2></div>
 		
 		<div className="grid  max-sm:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 
     sm:gap-6

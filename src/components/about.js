@@ -6,7 +6,7 @@ export default function About() {
 	
   <div id="about"  className="flex flex-col items-center justify-center gap-4">
 
-	<div className="button_join">About</div>
+	<div className="content">About</div>
 		<section className="grid items-center md:grid-cols-16 align-center lg:justify-center lg:px-12 max-md:text-center md:text-center  sm:text-center max-sm:text-center">
 			
 				<div className="col-span-8  ">
