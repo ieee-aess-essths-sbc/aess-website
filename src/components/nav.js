@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from 'next/image'
 import "./nav.css"
 
 
@@ -17,7 +17,7 @@ export default function Navigation() {
 				<div className="flex  items-center w-auto  ">		
 				
 				<a to="/" >
-						<img
+						<Image
 							loading="lazy"
 							src="logo.png"
 							className="h-12 sm:h-8 md:h-12 w-full sm:h-auto max-sm-w-[50%]  max-sm:mr-0 "
@@ -87,14 +87,14 @@ export default function Navigation() {
 <div className="flex items-center  w-full ">		
 				
 				<a to="/" >
-						<img
+						<Image
 							loading="lazy"
 							src="logo.png"
 							className="h-auto sm:h-8 md:h-12 sm:h-auto w-[50%]  "
 							alt="IEEE ESSTHS"
 						/>
 					</a></div>
-<div className="p-4 menu z-10"   onClick={ () => setIsMenuOpen(!isMenuOpen)}><img className=" bg-none  w-full h-auto" src="Menu.svg"  loading="lazy"/></div></div>
+<div className="p-4 menu z-10"   onClick={ () => setIsMenuOpen(!isMenuOpen)}><Image className=" bg-none  w-full h-auto" src="Menu.svg"  loading="lazy"/></div></div>
 </div>
 							
 				</div>

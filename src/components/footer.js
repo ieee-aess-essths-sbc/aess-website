@@ -2,6 +2,8 @@
 "use client"
 import "./footer.css"
 import {HoverIcon } from '@/components/hovericon'
+import Image from 'next/image'
+
 export default function Footer() { 
 
 
@@ -12,7 +14,7 @@ export default function Footer() {
                 <div className=" flex flex-col 
                 lg:justify-start sm:justify-center md:justify-center items-center">
 
-	<img
+	<Image
 							loading="lazy"
 							src="logo.png"
 							className="h-auto  w-50 "
@@ -69,9 +71,9 @@ export default function Footer() {
  <div className="flex flex-col justify-start gap-5 ">
  
  <div>Contact</div>
-<div   className="flex flex-row"><img className="p-2  bg-none rounded-full " src="Location.png"  loading="lazy"/>ESSTHS University - Sousse , Tunisia</div>
-<div  className="flex flex-row  "><img className="p-2  bg-none rounded-full " src="email.png"  loading="lazy"/>ieee.aess.essths.sbc@gmail.com</div>
-<div  className="flex flex-row  "><img className="p-2 bg-none rounded-full " src="Phone.png"  loading="lazy"/>+216 - 99 999 999</div>
+<div   className="flex flex-row"><Image className="p-2  bg-none rounded-full " src="Location.png"  loading="lazy"/>ESSTHS University - Sousse , Tunisia</div>
+<div  className="flex flex-row  "><Image className="p-2  bg-none rounded-full " src="email.png"  loading="lazy"/>ieee.aess.essths.sbc@gmail.com</div>
+<div  className="flex flex-row  "><Image className="p-2 bg-none rounded-full " src="Phone.png"  loading="lazy"/>+216 - 99 999 999</div>
 </div>
 
                 </div>

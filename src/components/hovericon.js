@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import Image from 'next/image'
 
 export function HoverIcon({ href, src, hoverSrc, alt, className }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,7 +12,7 @@ export function HoverIcon({ href, src, hoverSrc, alt, className }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <img
+        <Image
         className={className}
           src={isHovered ? hoverSrc : src}
           alt={alt}

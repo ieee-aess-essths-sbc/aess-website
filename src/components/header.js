@@ -1,5 +1,6 @@
 "use client"
 import "./header.css"
+import Image from 'next/image'
 
 import {HoverIcon } from '@/components/hovericon'
 
@@ -65,7 +66,7 @@ export default function Header() {
 			</div>
 		</div>
  <div className=" max-lg:hidden astro fixed"> 
-	<img className=" bg-none  w-500 h-auto astro" src="astro.svg"  loading="lazy"/>
+	<Image className=" bg-none  w-500 h-auto astro" src="astro.svg"  loading="lazy"/>
 
 </div> 
 
