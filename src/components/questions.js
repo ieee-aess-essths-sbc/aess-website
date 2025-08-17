@@ -1,9 +1,8 @@
+'use client';
 
-"use client"
-
-import './values.css'
-import {question} from "../data/question"
-import { useState } from "react";
+import './values.css';
+import { question } from '../data/question';
+import { useState } from 'react';
 
 export default function Questions() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -11,32 +10,30 @@ export default function Questions() {
   const toggleAnswer = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-	return (
-	 <section id="faq" className="flex flex-col items-center justify-center w-full">
+  return (
+    <section id="faq" className="flex w-full flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-      <div className="w-full flex justify-center"><h2 className="content mb-10">FAQ</h2></div>  
-        <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto lg:px-6 sm:px-2">
+        <div className="flex w-full justify-center">
+          <h2 className="content mb-10">FAQ</h2>
+        </div>
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:px-2 lg:px-6">
           {question.map((value, index) => (
             <div
               key={index}
-              className="bg-white relative flex flex-col items-center lg:p-14 max-md:p-8 md:p-8 max-sm:p-2 sm:p-2 rounded-2xl justify-between gap-4 text-black cursor-pointer"
+              className="relative flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-white text-black max-md:p-8 max-sm:p-2 sm:p-2 md:p-8 lg:p-14"
               onClick={() => toggleAnswer(index)}
             >
-              <div className="font-bold lg:text-3xl max-sm:text-xl sm:text-sm text-wrap text-center">
+              <div className="text-center font-bold text-wrap max-sm:text-xl sm:text-sm lg:text-3xl">
                 {value.q}
               </div>
 
               {openIndex === index && (
-                <div className="lg:text-2xl leading-9 max-sm:text-xl sm:text-sm">
-                  {value.a}
-                </div>
+                <div className="leading-9 max-sm:text-xl sm:text-sm lg:text-2xl">{value.a}</div>
               )}
             </div>
           ))}
         </div>
       </div>
     </section>
-	);
-  }
-  
-
+  );
+}
