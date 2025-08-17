@@ -1,50 +1,35 @@
-.card{
-    background: linear-gradient(to right,#013568 ,#01356800 );
-}
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px; 
-  padding: 0.04rem; 
-  background:linear-gradient(to right,#ffffff00,#FFFFFF ); 
-  mask: 
-    linear-gradient(#000 0 0) content-box, 
-    linear-gradient(#000 0 0);
-  mask-composite: exclude; 
-}
 
 .box {
   position: relative;
 }
 .box::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  border-radius: 15px; 
-  padding: 1px; 
-  background:linear-gradient(to left,#ffffff00,#FFFFFF ); 
-  mask: 
-    linear-gradient(#000 0 0) content-box, 
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(to left, #ffffff00, #ffffff);
+  mask:
+    linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
-  mask-composite: exclude; 
+  mask-composite: exclude;
 }
 
-.cardact{
-    background: linear-gradient(to right,#013568 ,#01356800 );
+.cardact {
+  background: linear-gradient(to right, #013568, #01356800);
 }
-
+/* 
 .button_join {
-width:12rem;
-height: 60px;
-    background-image: url("../../public/button.svg");	
+  width: 12rem;
+  height: 60px;
+  background-image: url('../../public/button.svg');
   background-color: rgba(0, 0, 0, 0.541);
-  	background-size: cover;
-	background-position: center;
-	
-	background-repeat: repeat;
-	background-clip:padding-box;
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: repeat;
+  background-clip: padding-box;
   border-radius: 5rem;
   position: relative;
   text-align: center;
@@ -58,11 +43,27 @@ height: 60px;
 .button_join::before {
   border-radius: 5rem;
   content: '';
-  background-image: radial-gradient(circle at 100%, #4690D4 0%, #6EBFF4 22% ,#A5EFFF 100%) ;
+  background-image: radial-gradient(circle at 100%, #4690d4 0%, #6ebff4 22%, #a5efff 100%);
   top: -1px;
   left: -1px;
   bottom: -1px;
   right: -1px;
   position: absolute;
   z-index: -1;
+} */
+.card {
+  background: linear-gradient(to right, #013568, #01356800);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 0.04rem;
+  background: linear-gradient(to right, #ffffff00, #ffffff);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
 }
