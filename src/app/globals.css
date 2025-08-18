@@ -33,7 +33,6 @@ html {
 
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: DMsans, sans-serif;
   padding: 0;
   margin: 0;

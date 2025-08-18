@@ -9,11 +9,11 @@ import logo from '../../public/logo.png';
 
 export default function Footer() {
   return (
-    <>
-      <div className="footer text-white flex flex-col max-md:justify-end max-md:px-10 max-sm:px-10 sm:px-10 md:px-10 lg:justify-between lg:px-16 lg:py-8">
-        <div className="item-center flex w-full max-sm:flex-col sm:flex-col sm:justify-center sm:gap-5 md:justify-center lg:flex-row lg:justify-between">
-          <div className="flex flex-col items-center sm:justify-center md:justify-center lg:justify-start">
-            <div className="flex w-50 flex-col items-center max-sm:h-40 sm:h-40 md:h-40">
+ 
+      <div className="footer text-white flex flex-col max-md:justify-end max-md:px-10 max-sm:px-10 sm:px-10 md:px-10 lg:justify-between lg:px-16 lg:py-8 sm:py-4 ">
+        <div className="lg:item-center flex w-full max-sm:flex-col sm:flex-col sm:justify-center sm:gap-1 md:justify-center lg:flex-row lg:justify-between lg:bg-amber-700">
+          <div className="flex flex-col items-center sm:justify-center md:justify-center lg:justify-center">
+            <div className="flex w-50 flex-col items-center max-sm:h-40 sm:h-35 md:h-40">
               <div className="relative h-20 w-50">
                 <div
                   className="flex items-center justify-center"
@@ -82,7 +82,10 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row max-md:justify-between max-sm:w-full max-sm:justify-between sm:w-full sm:justify-between lg:flex-1 lg:justify-evenly lg:gap-5 max-sm:flex-1/2">
+          <div className="flex flex-row max-md:justify-center max-sm:w-full max-sm:justify-evenly sm:w-full sm:justify-evenly lg:flex-1 lg:justify-end lg:gap-5 max-sm:flex-1 sm:flex-1
+          lg:w-full
+        
+          ">
             <div className="flex flex-col justify-between gap-5">
               <div>
                 <a href="#home" className="cursor-pointer">
@@ -117,9 +120,11 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-start gap-5 w-[80%]">
+            <div className="flex flex-col 
+           
+            sm:justify-start gap-5 lg:w-auto md:w-auto sm:w-auto ">
               <div>Contact</div>
-              <div className="    flex lg:gap-2 sm:gap-1 items-center justify-end   max-md:text-sm">
+              <div className="  lg:justify-start md:items-center flex lg:gap-2 sm:gap-1 sm:items-center md:text-md   max-sm:text-sm">
               <div className="flex flex-row text-wrap"
                     
               
@@ -140,12 +145,12 @@ export default function Footer() {
                 </div>
                 ESSTHS University - Sousse , Tunisia
               </div>
-                 <div className="    flex lg:gap-2  sm:gap-1  items-center justify-end   max-md:text-sm">
+                 <div className="   lg:justify-start flex lg:gap-2  sm:gap-1  sm:items-center     md:text-md   max-sm:text-sm">
               <div className="flex flex-row text-wrap"
                     
               
               >
-              <div className="flex flex-row text-wrap w-8 h-8"
+              <div className="flex flex-row text-wrap w-8 h-8 lg:justify-start md:text-md   max-sm:text-sm"
                  >
                      <div className="flex flex-row text-wrap"
                      style={{ position: 'relative', height: '100%',width:'100%', }}>
@@ -161,7 +166,7 @@ export default function Footer() {
                 </div>
                 ieee.aess.essths.sbc@gmail.com
               </div>
-               <div className="    flex lg:gap-2  sm:gap-1  items-center justify-start   max-md:text-sm">
+               <div className="    flex lg:justify-start lg:gap-2  sm:gap-1  items-center sm:justify-start   max-md:text-sm">
               <div className="flex flex-row text-wrap"
                     
               
@@ -188,6 +193,6 @@ export default function Footer() {
         </div>
         <div className="item-center text-center">2025 © All Rights Reserved</div>
       </div>
-    </>
+   
   );
 }
