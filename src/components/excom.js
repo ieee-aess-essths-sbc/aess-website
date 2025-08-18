@@ -6,10 +6,7 @@ export default function ExCom() {
       <div className="fontheader mb-8 items-center text-center text-xl sm:text-sm lg:text-xl">
         IEEE AESS ESSTHS SBC EXCOM{' '}
       </div>
-      <div className="grid w-full max-lg:grid-cols-5 max-md:grid-cols-1 max-sm:grid-cols-6 max-sm:gap-4 sm:grid-cols-9 sm:gap-4 md:grid-cols-4 md:gap-4 lg:grid-cols-5 lg:gap-1
-      max-md:bg-blue
-      
-      ">
+      <div className="max-md:bg-blue grid w-full max-lg:grid-cols-5 max-md:grid-cols-1 max-sm:grid-cols-6 max-sm:gap-4 sm:grid-cols-9 sm:gap-4 md:grid-cols-4 md:gap-4 lg:grid-cols-5 lg:gap-1">
         {teamData
           ?.filter((s) => !!s?.active)
           ?.map((speaker) => (
@@ -18,38 +15,29 @@ export default function ExCom() {
             // 	to={speaker.name}
             // 	className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
             // >
-            <div className='cardex items-left relative flex justify-start rounded-2xl  md:col-span-2 max-md:col-span-4 
-            lg:col-span-1 max-lg:col-span-1
-            sm:col-span-4
-            max-sm:col-span-6
-            md:h-40
-            max-sm:h-40
-            w-full
-lg:h-80
-            max-sm:gap-2  
-            ' key={speaker.name}>
             <div
-              
-              className="rounded-xl border-2 border-none w-full h-full flex flex-row justify-start max-md:items-center
-              max-md:bg-right lg:bg-bottom
-              "
-              style={{
-                backgroundImage: `url(${speaker.imageSmall.url})`,
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat',
-              
-                aspectRatio:"2"
-              }}
+              className="cardex items-left relative flex w-full justify-start rounded-2xl max-lg:col-span-1 max-md:col-span-4 max-sm:col-span-6 max-sm:h-40 max-sm:gap-2 sm:col-span-4 md:col-span-2 md:h-40 lg:col-span-1 lg:h-80"
+              key={speaker.name}
             >
-              <div className=" text-left max-sm:p-4 sm:gap-4 sm:p-4">
-                <div className="fontheader text-wrap md:text-xl">{speaker.name}</div>
+              <div
+                className="flex h-full w-full flex-row justify-start rounded-xl border-2 border-none max-md:items-center max-md:bg-right lg:bg-bottom"
+                style={{
+                  backgroundImage: `url(${speaker.imageSmall.url})`,
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
 
-                <div className="text-sm">
-                  {speaker.title}
-                  {false && `, ${speaker.company.name}`}
+                  aspectRatio: '2',
+                }}
+              >
+                <div className="text-left max-sm:p-4 sm:gap-4 sm:p-4">
+                  <div className="fontheader text-wrap md:text-xl">{speaker.name}</div>
+
+                  <div className="text-sm">
+                    {speaker.title}
+                    {false && `, ${speaker.company.name}`}
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
             // </Link>
           ))}

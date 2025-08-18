@@ -16,7 +16,7 @@
   inset: 0;
   border-radius: 16px;
   padding: 0.04rem;
-  background: linear-gradient(to  bottom, #ffffff00, #ffffff);
+  background: linear-gradient(to bottom, #ffffff00, #ffffff);
   mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);

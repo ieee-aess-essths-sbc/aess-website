@@ -180,56 +180,57 @@ const Actvities = ({ loopedEvents }) => {
   };
 
   return (
-    <div id="activities" className="flex w-full flex-col items-center lg:py-10 ">
+    <div id="activities" className="flex w-full flex-col items-center lg:py-10">
       <div className="content mb-6">Activities</div>
 
-      <div className=" relative flex lg:flex-row  md:flex-row w-full justify-center self-center overflow-hidden sm:flex-col sm:w-full max-sm:w-full ">
+      <div className="relative flex w-full justify-center self-center overflow-hidden max-sm:w-full sm:w-full sm:flex-col md:flex-row lg:flex-row">
         {/* Left Arrow - visible on mobile/tablet */}
 
-        <div className='max-md:hidden lg:block'>     <button
-          onClick={goToPrevious}
-          className="absolute top-1/2 left-2 z-20 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800"
-          aria-label="Previous event"
-        >
-          <svg
-            className="h-6 w-6 text-gray-700 dark:text-gray-300"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        <div className="max-md:hidden lg:block">
+          {' '}
+          <button
+            onClick={goToPrevious}
+            className="absolute top-1/2 left-2 z-20 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800"
+            aria-label="Previous event"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-
-        {/* Right Arrow - visible on mobile/tablet */}
-        <button
-          onClick={goToNext}
-          className="absolute top-1/2 right-2 z-20 -translate-y-1/2 transform cursor-pointer rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800"
-          aria-label="Next event"
-        >
-          <svg
-            className="h-6 w-6 text-gray-700 dark:text-gray-300"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+            <svg
+              className="h-6 w-6 text-gray-700 dark:text-gray-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          {/* Right Arrow - visible on mobile/tablet */}
+          <button
+            onClick={goToNext}
+            className="absolute top-1/2 right-2 z-20 -translate-y-1/2 transform cursor-pointer rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800"
+            aria-label="Next event"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+            <svg
+              className="h-6 w-6 text-gray-700 dark:text-gray-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
         <div
           ref={scrollRef}
-          className="custom-scrollbar flex lg:flex-row max-lg:flex-row  md:flex-row  max-md:flex-col sm:flex-col max-sm:flex-col w-full justify-center space-x-3 self-center overflow-hidden scroll-smooth lg:p-3 sm:gap-5 max-sm:gap-5"
+          className="custom-scrollbar flex w-full justify-center space-x-3 self-center overflow-hidden scroll-smooth max-lg:flex-row max-md:flex-col max-sm:flex-col max-sm:gap-5 sm:flex-col sm:gap-5 md:flex-row lg:flex-row lg:p-3"
           style={{
             scrollbarWidth: 'none',
             display: 'flex',
             justifyContent: 'center',
-           
+
             // Allow vertical scrolling but handle horizontal ourselves
           }}
         >
@@ -237,20 +238,22 @@ const Actvities = ({ loopedEvents }) => {
             return (
               <div
                 key={event['Event Title'] + idx}
-                className="cardact box flex  min-w-[15rem] md:flex-col max-md:flex-col max-sm:flex-row  sm:flex-row justify-between rounded-xl lg:p-6 sm:p-4  max-sm:p-1 text-left shadow-lg sm:w-full max-sm:w-full gap-2 "
+                className="cardact box flex min-w-[15rem] justify-between gap-2 rounded-xl text-left shadow-lg max-md:flex-col max-sm:w-full max-sm:flex-row max-sm:p-1 sm:w-full sm:flex-row sm:p-4 md:flex-col lg:p-6"
               >
-                <div className="lg:w-full flex justify-center items-center">
+                <div className="flex items-center justify-center lg:w-full">
                   <img
                     src={event['Event_image']}
                     alt=""
                     className="shadow-black-600 h-auto w-full rounded-xl shadow-lg"
                   />
                 </div>
-                <div className="flex flex-col justify-center gap-2 sm:w-[50%] max-sm:w-[70%] lg:w-full">
-                  <h3 className="fontBold text-lg text-gray-900 dark:text-white max-sm:text-xs">
+                <div className="flex flex-col justify-center gap-2 max-sm:w-[70%] sm:w-[50%] lg:w-full">
+                  <h3 className="fontBold text-lg text-gray-900 max-sm:text-xs dark:text-white">
                     {event['Event Title']}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 max-sm:text-xs">{event['desrip']}</p>
+                  <p className="text-gray-600 max-sm:text-xs dark:text-gray-300">
+                    {event['desrip']}
+                  </p>
                 </div>
               </div>
             );

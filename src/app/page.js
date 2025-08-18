@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <div className="max-md:px-10 max-sm:px-10 sm:px-10 md:px-10 lg:px-16 lg:py-8">
-        <main className="item-center flex w-full flex-col content-center justify-center lg:gap-20 md:gap-15 sm:gap-10 max-sm:gap-5">
+        <main className="item-center flex w-full flex-col content-center justify-center max-sm:gap-5 sm:gap-10 md:gap-15 lg:gap-20">
           <About />
           <ExCom />
           <AESSTunisia />

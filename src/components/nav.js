@@ -140,9 +140,9 @@ export default function Navigation() {
       </nav>
 
       {isMenuOpen && (
-        <div className="lg:hidden">
+        <div className="z-50 lg:hidden">
           <div
-            className="navmobile boxnav fixed top-0 z-10 flex h-full w-full flex-col justify-center gap-14 p-4 backdrop-blur-xl max-sm:items-center max-sm:justify-center"
+            className="navmobile boxnav fixed top-0 z-50 flex h-full w-full flex-col justify-center gap-14 p-4 backdrop-blur-xl max-sm:items-center max-sm:justify-center"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a href="#home" className="md:text cursor-pointer max-sm:text-sm/6 sm:text-sm">
