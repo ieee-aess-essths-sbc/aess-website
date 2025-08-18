@@ -140,7 +140,7 @@ export default function Navigation() {
       </nav>
 
       {isMenuOpen && (
-        <div className="z-50 lg:hidden fixed top-0 z-50 flex h-full w-full">
+        <div className="z-50 lg:hidden fixed top-0  flex h-full w-full">
           <div
             className="navmobile boxnav fixed top-0 z-50 flex h-full w-full flex-col justify-center gap-14 p-4 backdrop-blur-xl max-sm:items-center max-sm:justify-center"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

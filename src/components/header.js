@@ -38,12 +38,12 @@ export default function Header() {
                 </div>
               </div>
               {/* media icons */}
-              <div className="flex gap-2 max-md:flex-col max-md:justify-center max-sm:flex-1/7 max-sm:items-center max-sm:justify-end sm:flex-col sm:justify-start md:flex-row md:justify-center lg:flex-row lg:items-start lg:justify-start">
-                <div className="relative flex flex-col items-center justify-center">
+              <div className="md:bottom-0 md:z-0 md:relative sm:z-10 max-sm:z-10 sm:right-0 max-sm:right-0  sm:bottom-10 max-sm:bottom-10 sm:absolute  max-sm:absolute flex gap-2 max-md:flex-col max-md:justify-center max-sm:flex-1/7 max-sm:items-center max-sm:justify-end sm:flex-col sm:justify-start md:flex-row md:justify-center lg:flex-row lg:items-start lg:justify-start ">
+                <div className="relative flex flex-col items-center justify-center ">
                   {' '}
                   <HoverIcon
-                    objectfit="lg:p-2 md:p-4 max-sm:p-2 sm:p-3"
-                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-5 sm:p-5 md:p-9 lg:p-7"
+                    objectfit="lg:p-2 md:p-4 max-sm:p-1 sm:p-3"
+                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-4 sm:p-5 md:p-9 lg:p-7"
                     href="https://github.com/ieee-aess-essths-sbc"
                     src="GitHub.svg"
                     hoverSrc="GitHub_colored.svg"
@@ -54,8 +54,8 @@ export default function Header() {
                 <div className="relative flex flex-col items-center justify-center">
                   {' '}
                   <HoverIcon
-                    objectfit="lg:p-2 md:p-4 max-sm:p-2 sm:p-3"
-                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-5 sm:p-5 md:p-9 lg:p-7"
+                    objectfit="lg:p-2 md:p-4 max-sm:p-1 sm:p-3"
+                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-4 sm:p-5 md:p-9 lg:p-7"
                     href="https://www.facebook.com/profile.php?id=61552210194532"
                     src="Facebook.svg"
                     hoverSrc="Facebook_hover.svg"
@@ -66,8 +66,8 @@ export default function Header() {
                 <div className="relative flex flex-col items-center justify-center">
                   {' '}
                   <HoverIcon
-                    objectfit="lg:p-2 md:p-4 max-sm:p-2 sm:p-3"
-                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-5 sm:p-5 md:p-9 lg:p-7"
+                    objectfit="lg:p-2 md:p-4 max-sm:p-1 sm:p-3"
+                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-4 sm:p-5 md:p-9 lg:p-7"
                     href="https://www.instagram.com/ieee.aess.essths/"
                     src="Instagram.svg"
                     hoverSrc="Instagram_hover.svg"
@@ -78,8 +78,8 @@ export default function Header() {
                 <div className="relative flex flex-col items-center justify-center">
                   {' '}
                   <HoverIcon
-                    objectfit="lg:p-2 md:p-2 max-sm:p-2 sm:p-3"
-                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-5 sm:p-5 md:p-9 lg:p-7"
+                    objectfit="lg:p-2 md:p-2 max-sm:p-1 sm:p-3"
+                    className="flex cursor-pointer items-center justify-center rounded-full border-1 border-white hover:bg-white max-sm:p-4 sm:p-5 md:p-9 lg:p-7"
                     href="https://www.linkedin.com/"
                     src="LinkedIn.svg"
                     hoverSrc="LinkedIn_hover.svg"
