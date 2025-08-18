@@ -49,9 +49,7 @@ a {
   cursor: pointer;
 }
 
-*{
-  color: #ffffff;
-}
+
 
 body::before {
   content: '';

@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row max-md:justify-between max-sm:w-full max-sm:justify-between sm:w-full sm:justify-between lg:flex-1 lg:justify-evenly lg:gap-5">
+          <div className="flex flex-row max-md:justify-between max-sm:w-full max-sm:justify-between sm:w-full sm:justify-between lg:flex-1 lg:justify-evenly lg:gap-5 max-sm:flex-1/2">
             <div className="flex flex-col justify-between gap-5">
               <div>
                 <a href="#home" className="cursor-pointer">
@@ -117,31 +117,59 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-start gap-5">
+            <div className="flex flex-col justify-start gap-5 w-[80%]">
               <div>Contact</div>
-              <div className="flex flex-row">
+              <div className="    flex lg:gap-2 sm:gap-1 items-center justify-end   max-md:text-sm">
+              <div className="flex flex-row text-wrap"
+                    
+              
+              >
+              <div className="flex flex-row text-wrap w-8 h-8"
+                 >
+                     <div className="flex flex-row text-wrap"
+                     style={{ position: 'relative', height: '100%',width:'100%', }}>
                 <Image
-                  className="rounded-full bg-none p-2"
+                  className=" p-2"
                   src={location}
                   loading="lazy"
-                  width={30}
-                  height={10}
+              fill={true}
                   alt="location"
                 />
+                </div>
+                </div>
+                </div>
                 ESSTHS University - Sousse , Tunisia
               </div>
-              <div className="flex flex-row">
+                 <div className="    flex lg:gap-2  sm:gap-1  items-center justify-end   max-md:text-sm">
+              <div className="flex flex-row text-wrap"
+                    
+              
+              >
+              <div className="flex flex-row text-wrap w-8 h-8"
+                 >
+                     <div className="flex flex-row text-wrap"
+                     style={{ position: 'relative', height: '100%',width:'100%', }}>
                 <Image
                   alt="email"
-                  className="rounded-full bg-none p-2"
+                  className="p-2"
                   src={email}
                   loading="lazy"
-                  width={30}
-                  height={10}
+                fill={true}
                 />
+                  </div>
+                </div>
+                </div>
                 ieee.aess.essths.sbc@gmail.com
               </div>
-              <div className="flex flex-row">
+               <div className="    flex lg:gap-2  sm:gap-1  items-center justify-start   max-md:text-sm">
+              <div className="flex flex-row text-wrap"
+                    
+              
+              >
+              <div className="flex flex-row text-wrap w-8 h-8"
+                 >
+                     <div className="flex flex-row text-wrap"
+                     style={{ position: 'relative', height: '100%',width:'100%', }}>
                 <Image
                   className="rounded-full bg-none p-2"
                   src={phone}
@@ -150,6 +178,9 @@ export default function Footer() {
                   width={30}
                   height={10}
                 />
+                   </div>
+                </div>
+                </div>
                 +216 - 99 999 999
               </div>
             </div>
