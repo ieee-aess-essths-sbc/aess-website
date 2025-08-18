@@ -39,6 +39,7 @@ body {
   overflow-x: hidden;
   background-color: rgba(0, 0, 0);
   z-index: 1;
+
 }
 header {
   overflow-x: hidden;
@@ -46,6 +47,10 @@ header {
 
 a {
   cursor: pointer;
+}
+
+*{
+  color: #ffffff;
 }
 
 body::before {
