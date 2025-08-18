@@ -10,7 +10,7 @@ import logo from '../../public/logo.png';
 export default function Footer() {
   return (
     <>
-      <div className="footer flex flex-col max-md:justify-end max-md:px-10 max-sm:px-10 sm:px-10 md:px-10 lg:justify-between lg:px-16 lg:py-8">
+      <div className="footer text-white flex flex-col max-md:justify-end max-md:px-10 max-sm:px-10 sm:px-10 md:px-10 lg:justify-between lg:px-16 lg:py-8">
         <div className="item-center flex w-full max-sm:flex-col sm:flex-col sm:justify-center sm:gap-5 md:justify-center lg:flex-row lg:justify-between">
           <div className="flex flex-col items-center sm:justify-center md:justify-center lg:justify-start">
             <div className="flex w-50 flex-col items-center max-sm:h-40 sm:h-40 md:h-40">

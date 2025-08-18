@@ -2,7 +2,7 @@ import './header.css';
 
 export default function About() {
   return (
-    <div id="about" className="flex flex-col items-center justify-center p-10">
+    <div id="about" className=" text-white flex flex-col items-center justify-center p-10">
       <div className="content">About</div>
       <section className="align-center grid items-center max-md:text-center max-sm:text-center sm:text-center md:grid-cols-16 md:text-center lg:justify-center lg:px-12">
         <div className="col-span-8">

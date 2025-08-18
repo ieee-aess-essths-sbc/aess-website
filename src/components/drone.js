@@ -1,6 +1,6 @@
 export default function DroneProj() {
   return (
-    <section id="drone" className="flex w-full flex-col items-center justify-between">
+    <section id="drone" className=" text-white flex w-full flex-col items-center justify-between">
       <div className="mb-50 flex h-60 w-full flex-col items-center justify-between">
         <div className="flex w-full justify-center">
           <h2 className="content">Drone Project</h2>

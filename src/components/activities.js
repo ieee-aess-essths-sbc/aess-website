@@ -180,7 +180,7 @@ const Actvities = ({ loopedEvents }) => {
   };
 
   return (
-    <div id="activities" className="flex w-full flex-col items-center lg:py-10">
+    <div id="activities" className=" text-white flex w-full flex-col items-center lg:py-10">
       <div className="content mb-6">Activities</div>
 
       <div className="relative flex w-full justify-center self-center overflow-hidden max-sm:w-full sm:w-full sm:flex-col md:flex-row lg:flex-row">

@@ -1,6 +1,6 @@
 export default function AESSTunisia() {
   return (
-    <section className="align-center grid items-center py-14 max-sm:grid-cols-8 max-sm:px-0 sm:px-0 md:grid-cols-8 lg:grid-cols-16 lg:px-12">
+    <section className=" text-white align-center grid items-center py-14 max-sm:grid-cols-8 max-sm:px-0 sm:px-0 md:grid-cols-8 lg:grid-cols-16 lg:px-12">
       <div className="flex h-full w-full content-center items-center justify-center max-sm:order-2 max-sm:col-span-8 sm:order-2 sm:col-span-8 lg:order-1 lg:col-span-6">
         <img className="items-center justify-center" src="AESS.png" alt="TSYP 11" loading="lazy" />
       </div>

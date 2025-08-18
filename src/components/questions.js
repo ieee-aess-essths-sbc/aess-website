@@ -11,7 +11,7 @@ export default function Questions() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section id="faq" className="flex w-full flex-col items-center justify-center">
+    <section id="faq" className="  text-white flex w-full flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <div className="flex w-full justify-center">
           <h2 className="content mb-10">FAQ</h2>

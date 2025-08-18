@@ -10,7 +10,7 @@ export default function ContactPage() {
 
 export function ContactForm({ title = 'Contact us' }) {
   return (
-    <section className="h-full w-full lg:py-8">
+    <section className="h-full w-full lg:py-8  text-white">
       {/* Google Maps Section */}
       <section className="md:py-12">
         <div className="flex flex-col items-center justify-center">

@@ -2,7 +2,7 @@ import './exCome.css';
 
 export default function ExCom() {
   return (
-    <div className="mx-auto flex w-full flex-1 flex-col items-center md:justify-center md:px-10 lg:px-12">
+    <div className=" text-white mx-auto flex w-full flex-1 flex-col items-center md:justify-center md:px-10 lg:px-12">
       <div className="fontheader mb-8 items-center text-center text-xl sm:text-sm lg:text-xl">
         IEEE AESS ESSTHS SBC EXCOM{' '}
       </div>

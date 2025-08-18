@@ -3,7 +3,7 @@ import './values.css';
 export default function Values() {
   return (
     <section id="value">
-      <div className="flex flex-col content-center items-center gap-10 max-sm:p-0 sm:p-0 lg:px-14">
+      <div className=" text-white flex flex-col content-center items-center gap-10 max-sm:p-0 sm:p-0 lg:px-14">
         <div>
           <h2 className="content">Values</h2>
         </div>
