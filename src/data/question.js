@@ -7,14 +7,14 @@ export const question = [
   },
   {
     q: 'Do i need prior experience to join?  ',
-    a: 'We host workshops, hackathons, technical projects, webinars with experts, research initiatives, and industrial visits.',
+    a: 'No prior experience is needed .everyone is welcome to join us!',
   },
   {
     q: 'How can i stay updated on events and opportunities ?  ',
-    a: 'We host workshops, hackathons, technical projects, webinars with experts, research initiatives, and industrial visits.',
+    a: 'follow us on our socials ',
   },
   {
     q: 'what is IEEE AESS SBC ?   ',
-    a: 'We host workshops, hackathons, technical projects, webinars with experts, research initiatives, and industrial visits.',
+    a: 'It’s the Student Branch Chapter of the IEEE Aerospace & Electronic Systems Society, dedicated to students passionate about aerospace, satellites, drones, embedded systems, and electronics.',
   },
 ];
